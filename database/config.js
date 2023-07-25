@@ -6,10 +6,10 @@ let dbConnection = async () =>{
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        console.log(`DB ONLINE`);
+        console.log(`Base de datos iniciada`);
     } catch (error) {
         console.log(error);
-        throw new Error('DB CANT INICIALIZES');
+        throw new Error('Base de datos no iniciada >:(');
     }
 }
 
